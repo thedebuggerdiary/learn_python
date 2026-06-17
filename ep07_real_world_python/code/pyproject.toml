@@ -1,0 +1,23 @@
+[project]
+name = "greetlib"
+version = "0.1.0"
+description = "A tiny greeting library — Python from Scratch Episode 7"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "mypy>=1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["."]
